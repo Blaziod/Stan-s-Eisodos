@@ -7,10 +7,9 @@ import "../Styles/Footer.css"
 function Footer() {
   return (
     <div className="footer">
+        
       <div className="socialMedia">
-        <FacebookIcon />
-        <TwitterIcon />
-        <LinkedInIcon />
+        <FacebookIcon /> <TwitterIcon /> <LinkedInIcon />
       </div>
       <p>Copyright &copy; 2023 </p>
     </div>
