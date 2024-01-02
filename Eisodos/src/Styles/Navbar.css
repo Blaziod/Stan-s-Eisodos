@@ -192,6 +192,11 @@
   padding: 10px 20px;
   outline: white;
   margin-top: 35px;
-  margin-left: 1179px;
+  margin-left: 1080px;
+  margin-right: 190px;
   
+}
+
+.rightSide {
+  margin-right: 230px;
 }
