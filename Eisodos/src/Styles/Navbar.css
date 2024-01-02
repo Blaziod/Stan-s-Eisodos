@@ -1,106 +1,186 @@
 .navbar {
-    width: 100%;
-    height: 300px;
-    /* background-color: #121619; */
-    background-image: url("../assets/nice.png");
-    display: flex;
-    flex-direction: row;
-    font-family: url("href='https://fonts.googleapis.com/css?family=DM Sans'")
+  width: 100vw;
+  height: 300px;
+  /* background-color: #121619; */
+  background-image: url("../assets/nice.png");
+  display: flex;
+  flex-direction: row;
+  font-family: url("href='https://fonts.googleapis.com/css?family=DM Sans'");
+  overflow: hidden;
+}
+
+.navbar .leftSide {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: top;
+  padding-left: 20px;
+  color: white;
+}
+
+.navbar .leftSide img {
+  width: 175px;
+  height: 25px;
+  margin-top: 50px;
+  margin-left: 170px;
+}
+
+.navbar .rightSide {
+  flex: 50%;
+  display: flex;
+  margin-top: 25px;
+  position: relative;
+ 
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.navbar .rightSide button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar .rightSide svg {
+  font-size: 40px;
+}
+
+.navbar #open {
+  padding-left: 0px;
+}
+.navbar #open img {
+  display: none;
+}
+
+.navbar #close img {
+  display: inherit;
+}
+
+.navbar #open .hiddenLinks {
+  display: inherit;
+  margin-left: 30px;
+}
+
+.navbar #close .hiddenLinks {
+  display: none;
+}
+
+.navbar #open a {
+  width: 70px;
+  margin: 5px;
+}
+@media only screen and (max-width: 900px) {
+  .navbar .rightSide a {
+    width: 70px;
   }
-  
   .navbar .leftSide {
-    flex: 50%;
-    height: 100%;
-    display: flex;
-    align-items: top;
-    padding-left: 20px;
-    color: white;
-    
+    padding-left: 50px;
   }
-  
-  .navbar .leftSide img {
-    width: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar .rightSide a {
+    display: none;
   }
-  
+
   .navbar .rightSide {
-    flex: 50%;
-    height: 100%;
-    display: flex;
-    align-items: top;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-right: 50px;
   }
-  
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    margin: 20px;
-  }
-  
+
   .navbar .rightSide button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .navbar .rightSide svg {
-    font-size: 40px;
-  }
-  
-  .navbar #open {
-    padding-left: 0px;
-  }
-  .navbar #open img {
-    display: none;
-  }
-  
-  .navbar #close img {
     display: inherit;
   }
-  
-  .navbar #open .hiddenLinks {
-    display: inherit;
-    margin-left: 30px;
-  }
-  
-  .navbar #close .hiddenLinks {
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar .rightSide button {
     display: none;
   }
-  
-  .navbar #open a {
-    width: 70px;
-    margin: 5px;
+
+  .hiddenLinks {
+    display: none;
   }
-  @media only screen and (max-width: 900px) {
-    .navbar .rightSide a {
-      width: 70px;
-    }
-    .navbar .leftSide {
-      padding-left: 50px;
-    }
-  }
+}
+
+.searchBar {
+  border-radius: 16px;
+  background: #242565;
+  width: 1086px;
+  height: 140px;
+  margin-left: 135px;
+  display: flex;
+  position: absolute;
+  top: 250px;
+}
+
+.SearchEvents {
+  margin-right: 55px;
+  margin-left: 50px;
+  color: white;
+}
+
+.SearchEvents input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  width: 270px;
+  height: 22px;
+  text-align: center;
+}
+
+.Location {
+  margin-right: 55px;
+  color: white;
+}
+
+.Location input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  width: 270px;
+  height: 30.793px;
+  text-align: center;
+}
+
+.Date {
+  margin-right: 25px;
+  color: white;
+}
+
+.Date input {
+  width: 270px;
+  height: 30.793px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  font-size: 24px;
+  color: #f1f1f1;
+}
+
+.Search img {
+  color: white;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.loginbtn {
+  position: absolute;
+  /* left: 1200px; */
+  background: transparent;
+  border-radius: 50px;
+  border: 1.8px solid #D1D1D1;
+  padding: 10px 20px;
+  outline: white;
+  margin-top: 35px;
+  margin-left: 1179px;
   
-  @media only screen and (max-width: 600px) {
-    .navbar .rightSide a {
-      display: none;
-    }
-  
-    .navbar .rightSide {
-      justify-content: flex-end;
-      padding-right: 50px;
-    }
-  
-    .navbar .rightSide button {
-      display: inherit;
-    }
-  }
-  
-  @media only screen and (min-width: 600px) {
-    .navbar .rightSide button {
-      display: none;
-    }
-  
-    .hiddenLinks {
-      display: none;
-    }
-  }
+}

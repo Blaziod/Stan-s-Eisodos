@@ -1,22 +1,119 @@
 .footer {
-    width: 100%;
-    height: 200px;
-    background-color: #242565;
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+  width: 100%;
+  background-color: #242565;
+  margin-top: 100px;
+}
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding-top: 30px;
 }
 
-.socialMedia svg {
-    color: white;
-    margin: 20px;
-    font-size: 20px;
-    cursor: pointer;
+.SM1,
+.SM2,
+.SM3 {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  margin-right: 10px;
 }
 
 .footer p {
-    color: white;
+  color: white;
+  align-items: center;
+}
+.EISODOS {
+  padding-left: 100px;
+  margin-right: 80px;
+}
+.EISODOS p {
+  width: 333px;
+}
+
+.planEvents {
+  margin-right: 85px;
+  color: #f3f3f3;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%;
+}
+
+.Name p,
+.planEvents p {
+  margin: 0px;
+}
+.Name {
+  flex-basis: 15%;
+  color: #f3f3f3;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%;
+}
+
+.SITL {
+  flex-basis: 30%;
+  color: #f3f3f3;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+  padding-right: 102px;
+}
+.sub-Space {
+  border-radius: 45.595px;
+  border: 2px solid #f1f1f1;
+  background: #fff;
+  width: 400px;
+  height: 30.793px;
+  justify-content: center;
+  align-items: center;
+}
+.sub-Btn {
+  border-radius: 50px;
+  background: #b102ac;
+  display: inline-flex;
+  height: 31px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 205px;
+  top: 2px;
+  color: white;
+}
+.buttonIn {
+  position: relative;
+}
+.sss {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.Copyright {
+  padding-left: 659px;
+  padding-right: 500px;
+  color: #fefefe;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+}
+
+.line hr {
+  width: 1200px;
+  /* height: 1px; */
+  color: solid red;
+  margin-top: 100px;
 }

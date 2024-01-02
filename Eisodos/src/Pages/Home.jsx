@@ -1,15 +1,17 @@
 import React from "react";
 import "../Styles/Home.css";
 import { FeaturedEvents } from "../Helpers/featuredEvents";
+import { UpcomingEvents } from "../Helpers/upcomingEvents";
 import FeaturedItem from "../components/featuredItem";
+import UpcomingItem from "../components/upcomingItem";
+import MYOE from "../assets/MYOE.png"
 
 function Home() {
   return (
     <div className="home">
-        <div className="featuredEvents" style={{ padding: 100 }}>
-          <h1 id="FE">Featured Events</h1>
+       <h1 id="FE">Featured Events</h1>
+        <div className="featuredEvents">    
       <div className="menu">
-        
           <div className="feContents">
             {FeaturedEvents.map((featuredItem, key) => {
               return (
@@ -28,20 +30,27 @@ function Home() {
         </div>
       </div>
       <br></br>
-      <div className="upcomingEvents" style={{ padding: 10 }}>
-        <h1 id="FE">Upcoming Events</h1>
+      <div className="MYOE"> 
+      <img src={MYOE}></img>
+      <div>
+      <h2>Make your own Event </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+      <button>Create Events</button>
+      </div>
+      </div>
+      <h1 id="UE">Upcoming Events</h1>
+      <div className="upcomingEvents">
         <div className="menu">
-        
-          <div className="feContents">
-            {FeaturedEvents.map((featuredItem, key) => {
+          <div className="ueContents">
+            {UpcomingEvents.map((upcomingItem, key) => {
               return (
                 <div>
-                  <FeaturedItem
+                  <UpcomingItem
                     key={key}
-                    image={featuredItem.image}
-                    eventName={featuredItem.eventName}
-                    date={featuredItem.date}
-                    description={featuredItem.description}
+                    image={upcomingItem.image}
+                    eventName={upcomingItem.eventName}
+                    date={upcomingItem.date}
+                    description={upcomingItem.description}
                   />
                 </div>
               );
@@ -49,6 +58,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <button className="Lm">Load More</button>
     </div>
   );
 }
